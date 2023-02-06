@@ -1,0 +1,127 @@
+* {
+    margin: 0px; padding: 0px;
+    border: none;
+    box-sizing: border-box;
+
+}
+.home-section{
+    min-height: 100vh;
+    min-width: 100vh;
+    background: #1b2c31;
+    padding: 60px;
+    font: 14px Tahoma, Geneva, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header {
+    margin: 0px auto;
+    position: relative;
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+.inbox_container {
+    background-image: url('../images/5621760.png');
+    border: 1px solid rgb(90, 87, 87);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    width: 90%;
+}    
+.mailbox {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    border-radius: 10px;
+}
+.message {
+    clear: both;
+    margin-bottom: 5px;
+    position: relative;
+    padding: 5px;
+    background: rgb(213, 234, 248);
+    border-radius: 5px;
+}
+.messages {
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+}
+.message input {
+    position: absolute;
+    top: 8px; left: 10px;
+    width: 30px;
+}
+.message .sender {
+    display: block;
+    position: absolute;
+    left: 40px;
+    color: #000;
+    font-weight: bold;
+    width: 90px;
+}
+.message .title {
+    display: inline-block;
+    padding-left: 150px;
+    width: 100%;
+} 
+.message .date {
+    position: absolute;
+    right: 10px;
+}
+.navMessage {
+    background: #EEE;
+    width: 200px;
+}
+.navMessage a {
+    display: block;
+    padding: 5px 10px;
+    color: #3D9FC4; 
+    font-weight: bold;
+    text-decoration: none;
+}
+.navMessage a.active {
+    background: #CCDDED;
+}
+.navMessage a:first-child {
+    margin: 10px 0px 10px;
+}
+.actions-dropdown {
+    display: block;
+    float: right;
+    position: relative;
+    margin: 5px 10px 10px 0px;
+}
+.actions {
+    padding: 5px 10px;
+    background: #EEE;
+    color: #666;
+    cursor: pointer;
+}
+
+.actions ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.actions li {
+    margin-right: 10px;
+}
+
+input[name=search] {
+    display: block;
+    float: right;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background: #EEE;
+    font: 14px Tahoma, Geneva, sans-serif;
+    border-radius: 5px;
+}
+input[name=search]:focus {
+    outline: none;
+}
+  

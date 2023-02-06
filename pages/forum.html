@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatable" content="IE=edge">
+        <title> myICE - Forum</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/forum.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="logo-details">
+                <div class="logo_name"><img class="logo" src="../images/logo1.png" alt="logo" width="150px "></div>
+                <i class='bx bx-menu' id="btn" ></i>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <i class='bx bx-search' ></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip">Search</span>
+                </li>
+                <li>
+                    <a href="home.html">
+                    <i class='bx bxs-dashboard' ></i>
+                    <span class="links_name">My Dashboard</span>
+                    </a>
+                    <span class="tooltip">My Dashboard</span>
+                </li>
+                <li>
+                <a href="profile.html">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">My Profile</span>
+                </a>
+                <span class="tooltip">My Profile</span>
+                </li>
+                <li>
+                <a href="messages.html">
+                    <i class='bx bx-chat' ></i>
+                    <span class="links_name">Messages</span>
+                </a>
+                <span class="tooltip">Messages</span>
+                </li>
+                <li>
+                <a href="connect.html">
+                    <i class='bx bx-world'></i>
+                    <span class="links_name">Connect</span>
+                </a>
+                <span class="tooltip">Connect</span>
+                </li>
+                <li>
+                    <a href="guilds.html">
+                        <i class='bx bxl-sketch'></i>
+                        <span class="links_name">Guilds</span>
+                    </a>
+                    <span class="tooltip">Guilds</span>
+                    </li>
+                <li>
+                <a href="forum.html">
+                    <i class='bx bx-folder' ></i>
+                    <span class="links_name">Forum</span>
+                </a>
+                <span class="tooltip">Forum</span>
+                </li>
+                <li>
+                <a href="faq.html">
+                    <i class='bx bx-question-mark'></i>
+                    <span class="links_name">FAQ</span>
+                </a>
+                <span class="tooltip">FAQ</span>
+                </li>
+                <li>
+                <a href="settings.html">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                <span class="tooltip">Settings</span>
+                </li>
+                <li class="profile">
+                    <div class="profile-details">
+          
+                    <div class="name_job">
+                        <div class="name">Name</div>
+                        <div class="job">Owner</div><br>
+                </div>
+                </div>
+                <a href="index.php?logout='1'">
+                    <i class='bx bx-log-out' id="log_out" ></i>
+                </a>
+                </li>
+            </ul>
+            <script>
+                let sidebar = document.querySelector(".sidebar");
+                let closeBtn = document.querySelector("#btn");
+                let searchBtn = document.querySelector(".bx-search");
+                closeBtn.addEventListener("click", ()=>{
+                    sidebar.classList.toggle("open");
+                });
+                searchBtn.addEventListener("click", ()=>{ 
+                    sidebar.classList.toggle("open");
+                });
+            </script>
+        </div>
+        <div class="home-section">
+            <header>
+
+                <nav>
+                <ul>
+                    <li><a href="#">Recent</a></li>
+                    <li><a href="#">Topics</a></li>
+                    <li><a href="#">Proposals</a></li>
+                </ul>
+                </nav>
+            </header>
+            <main>
+                <section class="discussion_container">
+                    <h2>Recent Discussions</h2>
+                    <section class="discussion">
+                    <h3><a href="#">Forum example 1 - "What are delegates?"</a></h3>
+                    <p class="meta">Started by <a href="#">Rando Crown</a> in <a href="#">Delegate Questions</a></p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae adipisci molestias magni nam laborum eos doloremque voluptate officia et unde dolores rerum ipsa quidem cumque autem non, excepturi, incidunt facere.</p>
+                    </section>
+                    <section class="discussion">
+                    <h3><a href="#">Forum example 2 - "Wen pamp?"</a></h3>
+                    <p class="meta">Started by <a href="#">Capygbara</a> in <a href="#">Off-Topic</a></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio excepturi ducimus alias fugiat deleniti saepe ut impedit voluptatem praesentium quaerat fugit placeat aliquid in, culpa soluta ab nostrum? Impedit, nemo!</p>
+                    </section>
+                    <section class="discussion">
+                        <h3><a href="#">Forum example 3 - "Wen TimV and Courtney Raise"</a></h3>
+                        <p class="meta">Started by <a href="#">c0ur7ney</a> in <a href="#">MAIN-Topic</a></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio excepturi ducimus alias fugiat deleniti saepe ut impedit voluptatem praesentium quaerat fugit placeat aliquid in, culpa soluta ab nostrum? Impedit, nemo!</p>
+                    </section>
+                </section>
+              </main>
+              <footer>
+                <p>&copy; 2023 myIce. All rights reserved.</p>
+              </footer>
+
+        </div>
+    </body>
+</html>

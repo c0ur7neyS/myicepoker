@@ -164,3 +164,8 @@
 .button button:hover{
     background: rgb(50, 90, 117);
 }
+footer {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
