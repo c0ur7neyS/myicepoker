@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatable" content="IE=edge">
+        <title> myICE - Log in</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/connect.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+                <div class="sidebar">
+                    <div class="logo-details">
+                        <div class="logo_name"><img class="logo" src="../images/logo1.png" alt="logo" width="150px "></div>
+                        <i class='bx bx-menu' id="btn" ></i>
+                    </div>
+                    <ul class="nav-list">
+                        <li>
+                            <i class='bx bx-search' ></i>
+                            <input type="text" placeholder="Search...">
+                            <span class="tooltip">Search</span>
+                        </li>
+                        <li>
+                            <a href="home.html">
+                            <i class='bx bxs-dashboard' ></i>
+                            <span class="links_name">My Dashboard</span>
+                            </a>
+                            <span class="tooltip">My Dashboard</span>
+                        </li>
+                        <li>
+                        <a href="profile.php">
+                            <i class='bx bx-user'></i>
+                            <span class="links_name">My Profile</span>
+                        </a>
+                        <span class="tooltip">My Profile</span>
+                        </li>
+                        <li>
+                        <a href="messages.php">
+                            <i class='bx bx-chat' ></i>
+                            <span class="links_name">My Messages</span>
+                        </a>
+                        <span class="tooltip">My Messages</span>
+                        </li>
+                        <li>
+                        <a href="connect.php">
+                            <i class='bx bx-world'></i>
+                            <span class="links_name">Connect</span>
+                        </a>
+                        <span class="tooltip">Connect</span>
+                        </li>
+                        <li>
+                        <a href="forum.php">
+                            <i class='bx bx-folder' ></i>
+                            <span class="links_name">Forum</span>
+                        </a>
+                        <span class="tooltip">Forum</span>
+                        </li>
+                        <li>
+                        <a href="subscriptions.php">
+                            <i class='bx bxl-sketch'></i>
+                            <span class="links_name">Subscriptions</span>
+                        </a>
+                        <span class="tooltip">Subscriptions</span>
+                        </li>
+                        <li>
+                        <a href="faq.html">
+                            <i class='bx bx-question-mark'></i>
+                            <span class="links_name">FAQ</span>
+                        </a>
+                        <span class="tooltip">FAQ</span>
+                        </li>
+                        <li>
+                        <a href="settings.php">
+                            <i class='bx bx-cog' ></i>
+                            <span class="links_name">Settings</span>
+                        </a>
+                        <span class="tooltip">Settings</span>
+                        </li>
+                        <li class="profile">
+                            <div class="profile-details">
+                
+                            <div class="name_job">
+                                <div class="name">Name</div>
+                                <div class="job">Owner</div><br>
+                        </div>
+                        </div>
+                        <a href="index.php?logout='1'">
+                            <i class='bx bx-log-out' id="log_out" ></i>
+                        </a>
+                        </li>
+                    </ul>
+                    <script>
+                        let sidebar = document.querySelector(".sidebar");
+                        let closeBtn = document.querySelector("#btn");
+                        let searchBtn = document.querySelector(".bx-search");
+                        closeBtn.addEventListener("click", ()=>{
+                            sidebar.classList.toggle("open");
+                        });
+                        searchBtn.addEventListener("click", ()=>{ 
+                            sidebar.classList.toggle("open");
+                        });
+                    </script>
+                </div>
+            <section class="home-section">
+                <div class="container">
+                <div class="content">
+                    <div class="card">
+                    <div class="card-content">
+                        <div class="image">
+                        <img src="https://events.decentraland.org/api/profile/0x838fdc7efd0877a8529c562867cc32bc728a599e/face.png" alt="avatar">
+                        </div>
+                        
+                        <div class="media-icons">
+                        <i class='bx bxl-facebook-circle'></i>  <!-- actual links to the users socials here -->
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-twitch' ></i>
+                        </div>
+                        <div class="status-icon">
+                        <i class='bx bxl-sketch'></i>
+                        <i class='bx bxl-sketch'></i>
+                        <i class='bx bxl-sketch'></i>
+                        </div>
+                        
+                        <div class="name-ownership">
+                        <span class="name"><abbr>c0ur7ney#599e</abbr></span>
+                        <span class="ownership">Owner</span>
+                        </div>
+                        <div class="rating">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        </div>
+                        <div class="total-check">
+                        <span class="total">Total Wearables:</span>
+                        <span class="check">5</span>
+                        </div>
+                        <div class="avg-chips">
+                        <span class="avg">Manager:</span>
+                        <span class="chips">Self</span>
+                        </div>
+                        <div class="del-status">
+                        <span class="status">Status:</span>
+                        <span class="del">Seeking Delegates</span>
+                        </div>
+                        <div class="button">
+                        <button class="connectMe">Connect</button>
+                        <button class="messageMe">Message</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="container">
+                <div class="content">
+                    <div class="card">
+                    <div class="card-content">
+                        <div class="image">
+                        <img src="https://events.decentraland.org/api/profile/0x07C0525e6F546Bd86E355a20D28b787f842061E0/face.png" alt="avatar">
+                        </div>
+                        
+                        <div class="media-icons">
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-twitch' ></i>
+                        </div>
+                        <div class="status-icon">
+                        <i class='bx bxl-sketch'></i>
+                        <i class='bx bxl-sketch'></i>
+                        <i class='bx bxl-sketch'></i>
+                        </div>
+                        
+                        <div class="name-ownership">
+                        <span class="name">Ser Capygbara</span>
+                        <span class="ownership">Owner</span>
+                        </div>
+                        <div class="rating">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        </div>
+                        <div class="total-check">
+                        <span class="total">Total Wearables:</span>
+                        <span class="check">Hidden</span>
+                        </div>
+                        <div class="avg-chips">
+                        <span class="avg">Manager:</span>
+                        <span class="chips">Self</span>
+                        </div>
+                        <div class="del-status">
+                        <span class="status">Status:</span>
+                        <span class="del">Seeking Delegates</span>
+                        </div>
+                        <div class="button">
+                        <button class="connectMe">Connect</button>
+                        <button class="messageMe">Message</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="container">
+                <div class="content">
+                    <div class="card">
+                    <div class="card-content">
+                        <div class="image">
+                        <img src="https://events.decentraland.org/api/profile/0xD505AF77d421afF12A9A820E8CBA4784E3A8cB24/face.png" alt="avatar">
+                        </div>
+                        
+                        <div class="media-icons">
+                        <i class='bx bxl-facebook-circle'></i> 
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-twitch' ></i>
+                        </div>
+                        <div class="status-icon">
+                        <i class='bx bxl-sketch'></i>
+                        <i class='bx bxl-sketch'></i>
+                        <i class='bx bxl-sketch'></i>
+                        </div>
+                        
+                        <div class="name-ownership">
+                        <span class="name">SpicyPrawn</span>
+                        <span class="ownership">Owner</span>
+                        </div>
+                        <div class="rating">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        </div>
+                        <div class="total-check">
+                        <span class="total">Total Wearables:</span>
+                        <span class="check">20 billion</span>
+                        </div>
+                        <div class="avg-chips">
+                        <span class="avg">Manager:</span>
+                        <span class="chips">DrM</span>
+                        </div>
+                        <div class="del-status">
+                        <span class="status">Status:</span>
+                        <span class="del">Seeking other Prawns</span>
+                        </div>
+                        <div class="button">
+                        <button class="connectMe">Connect</button>
+                        <button class="messageMe">Message</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                    <div class="container">
+                <div class="content">
+                    <div class="card">
+                    <div class="card-content">
+                        <div class="image">
+                        <img src="https://events.decentraland.org/api/profile/0xEB2e38E94460CC4A3D36FBc42b3f940043BAA404/face.png" alt="avatar">
+                        </div>
+                        
+                        <div class="media-icons">
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-twitch' ></i>
+                        </div>
+                        <div class="status-icon">
+                        <i class='bx bxl-sketch'></i>
+                        <i class='bx bxl-sketch'></i>
+                        </div>
+                        
+                        <div class="name-ownership">
+                        <span class="name">Hi#a404</span>
+                        <span class="ownership">Delegate</span>
+                        </div>
+                        <div class="rating">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bx-star' ></i>
+                        </div>
+                        <div class="total-check">
+                        <span class="total">Total Check Ins:</span>
+                        <span class="check">14</span>
+                        </div>
+                        <div class="avg-chips">
+                        <span class="avg">Average Tier:</span>
+                        <span class="chips">Bottom 52%</span>
+                        </div>
+                        <div class="del-status">
+                        <span class="status">Status:</span>
+                        <span class="del">Seeking Delegation</span>
+                        </div>
+                        <div class="button">
+                        <button class="connectMe">Connect</button>
+                        <button class="messageMe">Message</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="container">
+                <div class="content">
+                    <div class="card">
+                    <div class="card-content">
+                        <div class="image">
+                        <img src="https://events.decentraland.org/api/profile/0x2aBE457171EaAe32D5bafF2Cd22225939f7e9D08/face.png" alt="avatar">
+                        </div>
+                        
+                        <div class="media-icons">
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-twitch' ></i>
+                        </div>
+                        <div class="status-icon">
+                        <i class='bx bxl-sketch'></i>
+                        </div>
+                        
+                        <div class="name-ownership">
+                        <span class="name">KAPO#9d08</span>
+                        <span class="ownership">Delegate</span>
+                        </div>
+                        <div class="rating">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bx-star' ></i>
+                        <i class='bx bx-star' ></i>
+                        <i class='bx bx-star' ></i>
+                        <i class='bx bx-star' ></i>
+                        </div>
+                        <div class="total-check">
+                        <span class="total">Total Check Ins:</span>
+                        <span class="check">0</span>
+                        </div>
+                        <div class="avg-chips">
+                        <span class="avg">Average Tier:</span>
+                        <span class="chips">Unknown</span>
+                        </div>
+                        <div class="del-status">
+                        <span class="status">Status:</span>
+                        <span class="del">Seeking Delegation</span>
+                        </div>
+                        <div class="button">
+                        <button class="connectMe">Connect</button>
+                        <button class="messageMe">Message</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="container">
+                <div class="content">
+                    <div class="card">
+                    <div class="card-content">
+                        <div class="image">
+                        <img src="https://events.decentraland.org/api/profile/0x77B0C0B7366F609722625BD42886FbdFCc859657/face.png" alt="avatar">
+                        </div>
+                        
+                        <div class="media-icons">
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-twitch' ></i>
+                        </div>
+                        <div class="status-icon">
+                        <i class='bx bxl-sketch'></i>
+                        <i class='bx bxl-sketch'></i>
+                        </div>
+                        
+                        <div class="name-ownership">
+                        <span class="name">SWAKAPIK#9657</span>
+                        <span class="ownership">Delegate</span>
+                        </div>
+                        <div class="rating">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bx-star' ></i>
+                        <i class='bx bx-star' ></i>
+                        <i class='bx bx-star' ></i>
+                        </div>
+                        <div class="total-check">
+                        <span class="total">Total Check Ins:</span>
+                        <span class="check">4</span>
+                        </div>
+                        <div class="avg-chips">
+                        <span class="avg">Average Tier:</span>
+                        <span class="chips">Bottom 52%</span>
+                        </div>
+                        <div class="del-status">
+                        <span class="status">Status:</span>
+                        <span class="del">Seeking Delegation</span>
+                        </div>
+                        <div class="button">
+                        <button class="connectMe">Connect</button>
+                        <button class="messageMe">Message</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="container">
+                <div class="content">
+                    <div class="card">
+                    <div class="card-content">
+                        <div class="image">
+                        <img src="https://events.decentraland.org/api/profile/0x4bb5c5e9437a21aa217e1c14b42089f041daa5bc/face.png" alt="avatar">
+                        </div>
+                        
+                        <div class="media-icons">
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-twitch' ></i>
+                        </div>
+                        <div class="status-icon">
+                        <i class='bx bxl-sketch'></i>
+                        </div>
+                        
+                        <div class="name-ownership">
+                        <span class="name">kvachi#a5bc</span>
+                        <span class="ownership">Delegate</span>
+                        </div>
+                        <div class="rating">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bx-star' ></i>
+                        </div>
+                        <div class="total-check">
+                        <span class="total">Total Check Ins:</span>
+                        <span class="check">21</span>
+                        </div>
+                        <div class="avg-chips">
+                        <span class="avg">Average Tier:</span>
+                        <span class="chips">Top 45%</span>
+                        </div>
+                        <div class="del-status">
+                        <span class="status">Status:</span>
+                        <span class="del">Seeking Upgrade</span>
+                        </div>
+                        <div class="button">
+                        <button class="connectMe">Connect</button>
+                        <button class="messageMe">Message</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="container">
+                <div class="content">
+                    <div class="card">
+                    <div class="card-content">
+                        <div class="image">
+                        <img src="https://events.decentraland.org/api/profile/0x60c7773ba96bb377cef8506807b8cba9a8d5cf6e/face.png" alt="avatar">
+                        </div>
+                        
+                        <div class="media-icons">
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-twitch' ></i>
+                        </div>
+                        <div class="status-icon">
+                        <i class='bx bxl-sketch'></i>
+                        <i class='bx bxl-sketch'></i>
+                        <i class='bx bxl-sketch'></i>
+                        </div>
+                        
+                        <div class="name-ownership">
+                        <span class="name">Crocodile#cf6e</span>
+                        <span class="ownership">Owner</span>
+                        </div>
+                        <div class="rating">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        </div>
+                        <div class="total-check">
+                        <span class="total">Total Wearables:</span>
+                        <span class="check">7</span>
+                        </div>
+                        <div class="avg-chips">
+                        <span class="avg">Manager:</span>
+                        <span class="chips">IYAYM#a95c</span>
+                        </div>
+                        <div class="del-status">
+                        <span class="status">Status:</span>
+                        <span class="del">Seeking Delegates</span>
+                        </div>
+                        <div class="button">
+                        <button class="connectMe">Connect</button>
+                        <button class="messageMe">Message</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="container">
+                <div class="content">
+                    <div class="card">
+                    <div class="card-content">
+                        <div class="image">
+                        <img src="https://events.decentraland.org/api/profile/0x3497bbbc1e503c67aaea4e4256699c5d10d3a95c/face.png" alt="avatar">
+                        </div>
+                        
+                        <div class="media-icons">
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-twitch' ></i>
+                        </div>
+                        <div class="status-icon">
+                        <i class='bx bxl-sketch'></i>
+                        <i class='bx bxl-sketch'></i>
+                        </div>
+                        
+                        <div class="name-ownership">
+                        <span class="name">IYAYM#a95c</span>
+                        <span class="ownership">Manager</span>
+                        </div>
+                        <div class="rating">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bx-star' ></i>
+                        <i class='bx bx-star' ></i>
+                        </div>
+                        <div class="total-check">
+                        <span class="total">Guild Wearables:</span>
+                        <span class="check">7</span>
+                        </div>
+                        <div class="avg-chips">
+                        <span class="avg">Managing For:</span>
+                        <span class="chips">Crocodile#cf6e</span>
+                        </div>
+                        <div class="del-status">
+                        <span class="status">Status:</span>
+                        <span class="del">Seeking Delegates</span>
+                        </div>
+                        <div class="button">
+                        <button class="connectMe">Connect</button>
+                        <button class="messageMe">Message</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="container">
+                <div class="content">
+                    <div class="card">
+                    <div class="card-content">
+                        <div class="image">
+                        <img src="https://events.decentraland.org/api/profile/0x9dba052c5f07f6b79d5530e4c2a17e8ade25249a/face.png" alt="avatar">
+                        </div>
+                        
+                        <div class="media-icons">
+                        <i class='bx bxl-facebook-circle'></i>
+                        <i class='bx bxl-twitter' ></i>
+                        <i class='bx bxl-instagram' ></i>
+                        <i class='bx bxl-twitch' ></i>
+                        </div>
+                        <div class="status-icon">
+                        <i class='bx bxl-sketch'></i>
+                        </div>
+                        
+                        <div class="name-ownership">
+                        <span class="name">Lujube#249a</span>
+                        <span class="ownership">Delegate</span>
+                        </div>
+                        <div class="rating">
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        </div>
+                        <div class="total-check">
+                        <span class="total">Total Check Ins:</span>
+                        <span class="check">6</span>
+                        </div>
+                        <div class="avg-chips">
+                        <span class="avg">Average Tier:</span>
+                        <span class="chips">Top 6%</span>
+                        </div>
+                        <div class="del-status">
+                        <span class="status">Status:</span>
+                        <span class="del">Seeking Delegation</span>
+                        </div>
+                        <div class="button">
+                        <button class="connectMe">Connect</button>
+                        <button class="messageMe">Message</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+    </body>
+</html>

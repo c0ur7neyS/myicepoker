@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatable" content="IE=edge">
+        <title> myICE - Log in</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/faq.css">
+        <link rel="stylesheet" href="../css/navbar.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+      <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name"><img class="logo" src="../images/logo1.png" alt="logo" width="150px "></div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <i class='bx bx-search' ></i>
+                <input type="text" placeholder="Search...">
+                <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="home.html">
+                <i class='bx bxs-dashboard' ></i>
+                <span class="links_name">My Dashboard</span>
+                </a>
+                <span class="tooltip">My Dashboard</span>
+            </li>
+            <li>
+            <a href="profile.php">
+                <i class='bx bx-user'></i>
+                <span class="links_name">My Profile</span>
+            </a>
+            <span class="tooltip">My Profile</span>
+            </li>
+            <li>
+            <a href="messages.php">
+                <i class='bx bx-chat' ></i>
+                <span class="links_name">My Messages</span>
+            </a>
+            <span class="tooltip">My Messages</span>
+            </li>
+            <li>
+            <a href="connect.php">
+                <i class='bx bx-world'></i>
+                <span class="links_name">Connect</span>
+            </a>
+            <span class="tooltip">Connect</span>
+            </li>
+            <li>
+            <a href="forum.php">
+                <i class='bx bx-folder' ></i>
+                <span class="links_name">Forum</span>
+            </a>
+            <span class="tooltip">Forum</span>
+            </li>
+            <li>
+            <a href="subscriptions.php">
+                <i class='bx bxl-sketch'></i>
+                <span class="links_name">Subscriptions</span>
+            </a>
+            <span class="tooltip">Subscriptions</span>
+            </li>
+            <li>
+            <a href="faq.html">
+                <i class='bx bx-question-mark'></i>
+                <span class="links_name">FAQ</span>
+            </a>
+            <span class="tooltip">FAQ</span>
+            </li>
+            <li>
+            <a href="settings.php">
+                <i class='bx bx-cog' ></i>
+                <span class="links_name">Settings</span>
+            </a>
+            <span class="tooltip">Settings</span>
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+    
+                <div class="name_job">
+                    <div class="name">Name</div>
+                    <div class="job">Owner</div><br>
+            </div>
+            </div>
+            <a href="index.php?logout='1'">
+                <i class='bx bx-log-out' id="log_out" ></i>
+            </a>
+            </li>
+        </ul>
+        <script>
+            let sidebar = document.querySelector(".sidebar");
+            let closeBtn = document.querySelector("#btn");
+            let searchBtn = document.querySelector(".bx-search");
+            closeBtn.addEventListener("click", ()=>{
+                sidebar.classList.toggle("open");
+            });
+            searchBtn.addEventListener("click", ()=>{ 
+                sidebar.classList.toggle("open");
+            });
+        </script>
+    </div>
+      <div class="home-section">
+          <div class="accordion">
+            <div class="image-box">
+              <img src="../images/5621760.png" alt="background picture">
+            </div>
+            <dic class="accordion-text">
+              <div class="title">FAQ</div>
+
+          <ul class="faq-text">
+            <li>
+              <div class="question-arrow">
+                <span class="question">First question?</span>
+                <i class="bx bxs-chevron-down arrow"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dolore veritatis incidunt maiores dicta facilis soluta porro blanditiis tenetur ipsum, iste minima commodi quod amet quidem ab molestiae neque nam!</p>
+              <span class="line"></span>
+            </li>
+            <li>
+              <div class="question-arrow">
+                <span class="question">Second question?</span>
+                <i class="bx bxs-chevron-down arrow"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptate explicabo iste minima dolor doloremque illo saepe aperiam est voluptatum odit suscipit illum ipsum maiores aut fuga, quaerat consequuntur! Rerum!</p>
+              <span class="line"></span>
+            </li>
+            <li>
+              <div class="question-arrow">
+                <span class="question">Third question?</span>
+                <i class="bx bxs-chevron-down arrow"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sed fugit culpa esse exercitationem, ipsam facilis eum accusantium magnam tempore ipsum ad quas officiis suscipit sit enim velit quia aut.</p>
+              <span class="line"></span>
+            </li>
+            <li>
+              <div class="question-arrow">
+                <span class="question">Fourth question?</span>
+                <i class="bx bxs-chevron-down arrow"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error necessitatibus ut eum, impedit tempore, saepe atque blanditiis voluptate porro consectetur veniam accusamus ipsam excepturi. Asperiores, iure ullam. Dicta, tempore at!</p>
+              <span class="line"></span>
+            </li>
+            <li>
+              <div class="question-arrow">
+                <span class="question">Fifth question?</span>
+                <i class="bx bxs-chevron-down arrow"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti laudantium atque optio fugit iusto, nam soluta quia, expedita reiciendis blanditiis veritatis sit cupiditate nulla dicta deserunt veniam ullam commodi!</p>
+              <span class="line"></span>
+            </li>
+          </ul>
+          </div>
+
+    </div>
+      <script>
+
+      let li = document.querySelectorAll(".faq-text li");
+      for (var i = 0; i < li.length; i++) {
+        li[i].addEventListener("click", (e)=>{
+          let clickedLi;
+          if(e.target.classList.contains("question-arrow")){
+            clickedLi = e.target.parentElement;
+          }else{
+            clickedLi = e.target.parentElement.parentElement;
+          }
+          clickedLi.classList.toggle("showAnswer");
+        });
+      }
+    </script>
+</body>
+</html>

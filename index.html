@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatable" content="IE=edge">
+        <title> myICE - Log in</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="bgimg">
+            <a href="pages/home.html">home</a>
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div>
+                <div class="logomy">
+                    <img src="images/logo1.png" alt="logo" height=100px width=275px>
+            </div>
+                <form id="login" class="input-group">
+                    <input type="text" class="input-field" placeholder="Username"
+                    required>
+                    <input type="password" class="input-field" placeholder="Password"
+                    required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="submit" class="submit-btn">Log In</button>
+                </form>
+                <form id="register" class="input-group">
+                    <input type="text" class="input-field" placeholder="Enter Username" name="Username"required>
+                    <input type="password" class="input-field" name="password_1" placeholder="Password">
+  	                <input type="password" class="input-field" name="password_2" placeholder="Confirm Password">
+                    <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+                    <button type="submit" class="submit-btn">Register</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            const x = document.getElementById("login");
+            const y = document.getElementById("register");
+            const z = document.getElementById("btn");
+            function register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0";
+            }
+        </script>
+    </body>
+</html>
+
